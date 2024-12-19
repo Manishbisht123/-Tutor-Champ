@@ -1,6 +1,12 @@
 /* ==== media responsive mobile sizes === */
 
+/* ==== media responsive mobile sizes === */
+
 @media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden; 
+  }
+
   #Container {
     min-width: 100%;
     padding: 10px 15px;
@@ -32,10 +38,11 @@
     flex-direction: column;
     width: 100%;
     padding-left: 0;
-    position: absolute;
+    position: fixed; 
     top: 0;
-    padding: 20px 0px;
-    right: -100%;
+    left: 0; 
+    padding: 20px 0;
+    right: 0;
     transition: right 0.3s ease;
     background-color: white;
     z-index: 999;
@@ -64,6 +71,7 @@
     font-weight: 600;
     cursor: pointer;
     color: var(--text-color);
+    margin: 0;
   }
 
   #account .signUp {
@@ -81,6 +89,7 @@
   .home {
     background-position: center;
     background-size: cover;
+    overflow: hidden; 
   }
 
   .home .home-section {
