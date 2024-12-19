@@ -129,4 +129,41 @@
     font-size: 13px;
     line-height: 1.4;
   }
+
+  .course .course-section {
+    padding: 20px 15px;
+  }
+
+  .course-section i {
+    font-size: 14px;
+    padding: 8px;
+    line-height: 2;
+  }
+
+  .course-section span {
+    font-size: 18px;
+  }
+
+  .course-section h2 {
+    font-size: 24px;
+  }
+
+  .course-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+  .course-box .course-card {
+    margin: 10px;
+    padding: 15px 20px;
+  }
+
+  .course-content h3 {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+
+  .course-content p {
+    font-size: 13px;
+  }
 }
