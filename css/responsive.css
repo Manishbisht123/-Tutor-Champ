@@ -72,10 +72,6 @@
     margin: 10px 0px;
   }
 
-  #account .signUp:hover {
-    color: var(--main-color);
-  }
-
   .menuItems.active {
     right: 0;
   }
