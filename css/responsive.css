@@ -1,0 +1,82 @@
+/* ==== media responsive mobile sizes === */
+
+@media screen and (max-width: 768px) {
+  #Container {
+    min-width: 90%;
+    padding: 10px 15px;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .brandLogo {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-color);
+    text-transform: capitalize;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .menuItems {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    position: absolute;
+    top: 0;
+    padding: 20px 0px;
+    right: -100%;
+    transition: right 0.3s ease;
+    background-color: white;
+    z-index: 999;
+  }
+
+  .menuItems li {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .menuItems li .hoverLinks {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+
+  .menuItems li .hoverLinks:hover {
+    color: var(--main-color);
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+
+  #account .signUp {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 10px 0px;
+  }
+
+  #account .signUp:hover {
+    color: var(--main-color);
+  }
+
+  .menuItems.active {
+    right: 0;
+  }
+}
