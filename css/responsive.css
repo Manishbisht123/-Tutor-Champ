@@ -1,121 +1,84 @@
 /* ==== media responsive mobile sizes === */
 
 @media screen and (max-width: 768px) {
-  html, body {
-    overflow-x: hidden; 
-  }
-
   #Container {
     min-width: 100%;
     padding: 10px 15px;
   }
 
-  header {
-    height: 60px;
-    height: 100%;
-    overflow: hidden;
-  }
-
   .navbar {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
   }
 
   .brandLogo {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 700;
     color: var(--main-color);
     text-transform: capitalize;
     word-spacing: 1px;
-    margin-bottom: 10px;
   }
 
   .menuItems {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
-    padding-left: 0;
-    position: fixed; 
-    top: 0;
-    left: 0; 
-    padding: 20px 0;
-    right: 0;
-    transition: right 0.3s ease;
+    height: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
     background-color: white;
     z-index: 999;
+    transition: 0.3s ease;
   }
 
   .menuItems li {
-    padding: 10px 0;
-    width: 100%;
+    padding: 15px;
     text-align: center;
-    transition: background-color 0.3s ease;
-  }
-
-  .menuItems li .hoverLinks {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--text-color);
-  }
-
-  .menuItems li .hoverLinks:hover {
-    color: var(--main-color);
   }
 
   .hamburger-menu {
     display: block;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
-    cursor: pointer;
     color: var(--text-color);
-    margin: 0;
   }
 
-  #account .signUp {
-    display: block;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--text-color);
-    margin: 10px 0px;
-  }
 
   .menuItems.active {
-    right: 0;
+    display: flex;
   }
 
-  .home {
-    background-position: center;
-    background-size: cover;
-    overflow: hidden; 
-  }
 
   .home .home-section {
     flex-direction: column;
-    text-align: center;
     padding: 0 1rem;
+    text-align: center;
   }
 
   .home-content span {
     font-size: 14px;
-    line-height: 2.5;
+    line-height: 2;
+    margin-bottom: 10px;
   }
 
   .home-content h1 {
-    font-size: 34px;
-    text-align: center;
+    font-size: 35px;
+    line-height: 1.2;
   }
 
   .home-content p {
-    font-size: 13px;
-    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 15px 0;
   }
 
   .home-content button {
     width: 140px;
     height: 45px;
-    font-size: 15px;
-    margin: 10px auto;
+    font-size: 14px;
+    font-weight: 400;
+     margin: auto;
   }
 
   .home-img img {
