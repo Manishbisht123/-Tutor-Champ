@@ -79,4 +79,43 @@
   .menuItems.active {
     right: 0;
   }
+
+  .home {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .home .home-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .home-content span {
+    font-size: 14px;
+    line-height: 2.5;
+  }
+
+  .home-content h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .home-content p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .home-content button {
+    width: 140px;
+    height: 45px;
+    font-size: 15px;
+    margin: 10px auto;
+  }
+
+  .home-img img {
+    height: 350px;
+    width: 350px;
+    margin-top: 20px;
+  }
 }
