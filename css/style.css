@@ -100,10 +100,10 @@ header {
   background: var(--main-color);
   color: var(--white-color);
   width: 100px;
-  height: 40px;
+  height: 38px;
   text-align: center;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   cursor: pointer;
   padding: 0; 
 }
@@ -548,6 +548,7 @@ header {
 .counter-box .counter-card {
   border-radius: 10px;
   padding: 0 10px;
+  cursor: pointer;
 }
 
 .counter-content {
@@ -588,4 +589,12 @@ header {
   color: var(--text-color);
   margin-top: 15px;
   text-align: center;
+}
+
+
+/* === Contact us section === */
+
+.contact{
+  width: 100%;
+  background: var(--hover-color);
 }
