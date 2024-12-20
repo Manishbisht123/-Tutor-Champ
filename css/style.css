@@ -16,6 +16,7 @@
   --white-color: #fff;
   --dark-color: #000;
   --light-text: #555;
+  --bg-color: #f4f4f4;
 }
 
 body {
@@ -113,6 +114,8 @@ header {
   display: none;
   cursor: pointer;
 }
+
+
 
 /* === home section === */
 .home {
@@ -379,6 +382,140 @@ header {
 .course-content p {
   font-size: 15px;
   font-weight: 500;
-  color: #333;
+  color: var(--text-color);
   margin-top: 5px;
+}
+
+
+/* === Main courses section ==== */
+
+
+/* courses section */
+#courses {
+  width: 100%;
+  background: var(--bg-color);
+}
+
+#courses #courses-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#courses-section span {
+  color: var(--main-color);
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+#courses-section h2 {
+  color: rgb(19, 45, 94);
+  font-size: 28px;
+  line-height: 1.8;
+  font-weight: 800;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#courses-section p {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 700;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#courses-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  padding: 40px 0;
+}
+
+#course-card {
+  margin: 0 20px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+}
+
+#course-card img {
+  width: 350px;
+  height: 260px;
+  overflow: hidden;
+  padding: 4px;
+  object-fit: fill;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+#course-card img:hover {
+  filter: grayscale(1.5);
+}
+
+#courses-content {
+  padding: 5px 0px;
+  margin: 20px 5px;
+}
+
+#courses-content h3 {
+  font-weight: 500;
+  font-size: 15px;
+  font-family: 'poppins', sans-serif;
+}
+
+#course-rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#course-rate p {
+  font-size: 15px;
+  color: var(--light-text);
+}
+
+#course-star i {
+  font-size: 16px;
+  color: var(--main-color);
+  margin: 10px 0 10px 0;
+}
+
+#course-star span {
+  font-size: 15px;
+  color: var(--light-text);
+}
+
+#courses-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  border-top: 1px solid #ccc;
+}
+
+#courses-price p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--hover-color);
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+#courses-price a {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #555;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#courses-price span {
+  font-size: 14px;
+  color: var(--light-text);
+  text-decoration: line-through;
 }

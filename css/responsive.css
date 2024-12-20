@@ -44,6 +44,10 @@
     color: var(--text-color);
   }
 
+  .hamburger-menu:hover {
+    color: var(--hover-color);
+  }
+
   .menuItems.active {
     display: flex;
   }
@@ -165,5 +169,45 @@
 
   .course-content p {
     font-size: 13px;
+  }
+
+  #courses-section {
+    padding: 30px 10px;
+  }
+
+  #courses-box {
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+  }
+
+  #course-card {
+    margin: 0 10px;
+  }
+
+  #course-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  #courses-content h3 {
+    font-size: 14px;
+  }
+
+  #courses-price p,
+  #courses-price a,
+  #course-star span {
+    font-size: 12px;
+  }
+
+  #courses-section h2 {
+    font-size: 22px;
+  }
+
+  #courses-section span {
+    font-size: 18px;
+  }
+
+  #courses-section p {
+    font-size: 14px;
   }
 }
