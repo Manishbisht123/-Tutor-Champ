@@ -519,3 +519,66 @@ header {
   color: var(--light-text);
   text-decoration: line-through;
 }
+
+/* === counter section === */
+
+.counter {
+  width: 100%;
+}
+
+.counter .counter-section {
+  padding: 5px 20px;
+}
+
+.counter-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  padding: 40px 0;
+}
+
+.counter-box .counter-card {
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.counter-content {
+  margin: 20px 10px;
+  padding: 20px 10px;
+}
+
+.counter-card:nth-child(1) {
+  background-color: #a0f7e5;
+  color: #065747;
+}
+
+.counter-card:nth-child(2) {
+  background-color: #FDECEF;
+  color: rgb(245, 84, 111);
+}
+
+.counter-card:nth-child(3) {
+  background-color: #F3EEFF;
+  color: #895bf5;
+}
+
+.counter-card:nth-child(4) {
+  background-color: #FEF7E8;
+  color: #f5ba3b;
+}
+
+.counter-content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'poppins', sans-serif;
+}
+
+.counter-content h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-top: 15px;
+  text-align: center;
+}
