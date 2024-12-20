@@ -7,6 +7,7 @@ hamburger.addEventListener("click", function () {
   menuItems.classList.toggle("active");
 });
 
+
 // Counter Animation Function
 function animateCounters() {
   const counters = document.querySelectorAll(".count");
