@@ -233,4 +233,41 @@
     font-size: 13px;
     margin-top: 10px;
   }
+  .contactBox {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contactForm {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contactImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .contactImage img {
+    height: auto;
+  }
+
+  #contactButton {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input,
+  textarea {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .contactForm .contactText {
+    font-size: 24px;
+  }
 }

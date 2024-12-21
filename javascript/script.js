@@ -7,7 +7,6 @@ hamburger.addEventListener("click", function () {
   menuItems.classList.toggle("active");
 });
 
-
 // Counter Animation Function
 function animateCounters() {
   const counters = document.querySelectorAll(".count");
@@ -42,4 +41,36 @@ const observer = new IntersectionObserver(
 
 observer.observe(counterSection);
 
+// contact form
+document.getElementById("contactButton").addEventListener("click", function () {
+  const fullName = document.getElementById("fullName").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
 
+  // Validate form
+  if (!fullName) {
+    alert("Please enter your full name.");
+    return;
+  }
+
+  if (!email || !/\S+@\S+\.\S+/.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  if (!message) {
+    alert("Please enter your message.");
+    return;
+  }
+
+  // Display success message
+  document.getElementById("confirmationMessage").style.display = "block";
+
+  // Automatically hide the message after 3 seconds
+  setTimeout(() => {
+    confirmationMessage.style.display = "none";
+  }, 3000);
+
+  // Optionally, clear the form
+  document.getElementById("contactForm").reset();
+});

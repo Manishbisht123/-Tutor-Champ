@@ -355,6 +355,45 @@
       <!-- contact us section start -->
       <div id="Container">
         <section class="contact" id="contact">
+          <div class="contactBox">
+            <div class="contactForm">
+              <h2 class="contactText">Get In Touch</h2>
+              <form id="contactForm">
+                <label for="fullName">Full Name</label><br />
+                <input
+                  type="text"
+                  id="fullName"
+                  placeholder="Enter Your Full Name"
+                  required
+                /><br />
+                <label for="email">Email</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter Your Email"
+                  required
+                /><br />
+                <label for="message">Message</label><br />
+                <textarea
+                  name="Message"
+                  id="message"
+                  placeholder="Enter Your Message"
+                  required
+                ></textarea>
+                <button id="contactButton" type="button">Submit</button>
+              </form>
+              <p
+                id="confirmationMessage"
+                style="display: none; color: green; font-size: 14px"
+              >
+                Your message has been sent successfully!
+              </p>
+            </div>
+            <div class="contactImage">
+              <img src="./Assets/Contact/icon.webp" alt="imageIcon" />
+            </div>
+          </div>
+        </section>
       </div>
       <!-- contact us section end -->
     </main>
