@@ -98,6 +98,7 @@
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+    cursor: pointer;
   }
 
   .about-content {
@@ -269,5 +270,46 @@
 
   .contactForm .contactText {
     font-size: 24px;
+  }
+
+  .footer .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .footer-text h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .footer .footer-text .logo {
+    font-size: 22px;
+  }
+
+  .footer .footer-text .footer-list {
+    margin: 10px 0;
+  }
+
+  .footer .footer-list li {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  #social-icons i {
+    font-size: 15px;
+    padding: 8px;
+    margin: 10px 5px;
+  }
+
+  .copyright-section {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .copyright-section a {
+    font-size: 12px;
+    margin-bottom: 10px;
   }
 }
