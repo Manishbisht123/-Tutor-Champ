@@ -764,4 +764,28 @@ textarea {
   color: var(--hover-color);
 }
 
+/* === Top Button === */
+
+.up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.up-button:hover {
+  background-color: var(--hover-color);
+}
 

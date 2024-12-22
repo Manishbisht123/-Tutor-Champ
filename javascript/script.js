@@ -74,3 +74,24 @@ document.getElementById("contactButton").addEventListener("click", function () {
   // Optionally, clear the form
   document.getElementById("contactForm").reset();
 });
+
+
+//Top bUtton scroll To up
+const upButton = document.getElementById('upButton');
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        upButton.style.display = 'block';
+    } else {
+        upButton.style.display = 'none';
+    }
+};
+
+// Scroll to the top when the button is clicked
+upButton.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
