@@ -677,7 +677,7 @@ textarea {
 
 .footer {
   width: 100%;
-  background-color: var(--dark-color);
+  background-color: var(--hover-color);
 }
 
 .footer .footer-section {
@@ -705,7 +705,7 @@ textarea {
 .footer-text .logo {
   font-size: 25px;
   font-weight: 600;
-  color: var(--hover-color);
+  color: var(--white-color);
 }
 
 .footer-text .logo span {
@@ -736,8 +736,8 @@ textarea {
 }
 
 #social-icons i {
-  color: #fff;
-  background-color: var(--hover-color);
+  color: var(--hover-color);
+  background-color: var(--bg-color);
   font-size: 18px;
   padding: 10px;
   border-radius: 50%;
@@ -754,7 +754,7 @@ textarea {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: var(--Extra-color);
+  background-color: var(--hover-color);
 }
 
 .copyright-section a {
@@ -766,7 +766,7 @@ textarea {
 }
 
 .copyright-section a span {
-  color: var(--hover-color);
+  color: var(--main-color);
 }
 
 /* === Top Button === */
