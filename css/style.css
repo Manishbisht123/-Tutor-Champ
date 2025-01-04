@@ -24,7 +24,7 @@ body {
   font-family: "poppins", sans-serif;
   height: 100%;
   width: 100%;
-  background: #fff;
+  background: var(--white-color);
 }
 
 ::placeholder {
@@ -253,6 +253,11 @@ header {
   font-family: "poppins", sans-serif;
   color: var(--hover-color);
 }
+.online-text h2{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(19, 45, 94);
+}
 
 .online-text p {
   margin-top: 5px;
@@ -271,7 +276,7 @@ header {
 
 .earn-text h2 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: rgb(19, 45, 94);
 }
 
@@ -292,7 +297,7 @@ header {
 
 .expert-text h2 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: rgb(19, 45, 94);
 }
 
@@ -672,7 +677,7 @@ textarea {
 
 .footer {
   width: 100%;
-  background-color: var(--Extra-color);
+  background-color: var(--dark-color);
 }
 
 .footer .footer-section {
